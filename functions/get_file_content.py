@@ -1,0 +1,5 @@
+
+
+def get_file_content(working_directory: str, file_path: str) -> str:
+  if file_path not in working_directory:
+    raise Exception

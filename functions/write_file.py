@@ -7,9 +7,9 @@ def write_file(working_directory: str, file_path: str, content: str) -> str:
     file_path_abs = os.path.abspath(os.path.join(working_dir_abs, file_path))
 
     if os.path.commonpath([working_dir_abs, file_path_abs]) != working_dir_abs:
-      raise Exception(f'Cannot write to "{file_path}" as it is outside the permitted working directory')
+      return f'Error: Cannot write to "{file_path}" as it is outside the permitted working directory'
     if os.path.isdir(file_path_abs):
-      raise Exception(f'Cannot write to "{file_path}" as it is directory')
+      return f'Error: Cannot write to "{file_path}" as it is directory'
       
     os.makedirs(os.path.dirname(file_path_abs), exist_ok=True)
 

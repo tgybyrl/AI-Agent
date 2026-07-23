@@ -1,3 +1,6 @@
-from functions import get_file_content
+from functions.get_file_content import get_file_content
 
-print(get_file_content("calculator", "lorem.txt"))
+result = get_file_content("calculator", "lorem.txt")
+
+print(f"lorem.txt length: {len(result)}")
+print(f"lorem.txt truncated: {'truncated' in result}")

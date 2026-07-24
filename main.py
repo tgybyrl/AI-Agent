@@ -5,7 +5,6 @@ import argparse
 from prompts import system_prompt
 
 
-
 def main():
     load_dotenv()
     api_key = os.environ.get("OPENROUTER_API_KEY")

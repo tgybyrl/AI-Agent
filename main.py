@@ -32,6 +32,7 @@ def main():
     tools=available_functions,
     )
 
+    # print extra detailed information while running
     if args.verbose:
         print(f"User prompt: {args.user_prompt}")
         print(f"Prompt tokens: {response.usage.prompt_tokens}")

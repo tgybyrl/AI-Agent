@@ -185,6 +185,12 @@ These are handy for verifying the sandbox rejects out-of-bounds paths.
 
 ---
 
+## Acknowledgments
+
+Built while working through the ["Build an AI Agent" course on boot.dev](https://www.boot.dev/). The overall structure of the project (tool loop, sandboxed working directory, calculator target app) follows the course; the implementation is my own.
+
+---
+
 ## License
 
-No license specified yet &mdash; add one before publishing if you plan to accept contributions.
+Released under the [MIT License](LICENSE). You are free to use, modify, and redistribute this project as long as the copyright notice is preserved.
